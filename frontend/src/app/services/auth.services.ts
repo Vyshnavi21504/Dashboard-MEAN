@@ -7,8 +7,7 @@ import { Observable, tap } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-// Add /api to the end of your Render URL
-private apiUrl = 'https://mean-admin-backend.onrender.com/api';
+private apiUrl = 'https://mean-admin-backend.onrender.com/api/auth';
 
   constructor(
     private http: HttpClient,
