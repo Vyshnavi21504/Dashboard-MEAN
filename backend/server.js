@@ -9,7 +9,7 @@ app.use(express.json());
  
 app.use(cors({
   origin: [
-    'http://localhost:4200', 
+    'https://dashboard-frontend-6tkm.onrender.com', 
     'https://dashboard-frontend-6tkm.onrender.com' 
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],

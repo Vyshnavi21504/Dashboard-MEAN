@@ -18,7 +18,7 @@ export class RegisterComponent {
   constructor(private http: HttpClient, private router: Router) {}
 
   handleRegister() {
-    this.http.post('http://localhost:5000/api/auth/register', this.user).subscribe({
+    this.http.post('https://mean-admin-backend.onrender.com/api/auth/register', this.user).subscribe({
       next: () => {
         this.message = 'Registration successful! Redirecting...';
         setTimeout(() => this.router.navigate(['/login']), 2000);
