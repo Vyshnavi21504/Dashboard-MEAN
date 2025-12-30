@@ -1,0 +1,22 @@
+<div class="dashboard-container">
+  <h2>Admin Analytics Overview</h2>
+  
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3>Active Users</h3>
+      <p class="stat-value">{{ stats.activeUsers || 0 }}</p>
+    </div>
+    <div class="stat-card">
+      <h3>New Signups</h3>
+      <p class="stat-value">{{ stats.newSignups || 0 }}</p>
+    </div>
+    <div class="stat-card">
+      <h3>Total Sales</h3>
+      <p class="stat-value">${{ stats.totalSales || 0 }}</p>
+    </div>
+  </div>
+
+  <div class="chart-section">
+  <canvas id="myChart"></canvas>
+</div>
+</div>
