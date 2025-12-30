@@ -2,9 +2,9 @@
 
 # MEAN Admin Dashboard with Analytics & Reporting
 
-A professional full-stack administrative panel built using the **MEAN stack** (MongoDB, Express.js, Angular, Node.js). This project features secure JWT authentication, a responsive UI, and data visualization designed for CRM and analytics platforms.
+This is a  full-stack administrative panel that I have built using the **MEAN stack** (MongoDB, Express.js, Angular, Node.js). This project features secure JWT authentication with a  responsive UI, and data visualization designed for CRM (here I used chart.js) and analytics platforms.
 
-##  Live Demo
+##  Live Demo Links 
 * **Frontend:** [https://dashboard-frontend-6tkm.onrender.com](https://dashboard-frontend-6tkm.onrender.com)
 * **Backend API:** [https://mean-admin-backend.onrender.com](https://mean-admin-backend.onrender.com)
 
@@ -25,10 +25,10 @@ https://github.com/user-attachments/assets/f5d56cd1-3f57-4b46-af86-20ac723cb559
 ---
 
 ## 🛠️ Tech Stack & Version Details
-* **Frontend:** Angular 17.0.0+, RxJS 7.8.0+, Chart.js 4.4.0+
-* **Backend:** Node.js v18.x (LTS) or higher, Express.js 4.18.0+
-* **Database:** MongoDB Atlas (Cloud)
-* **Authentication:** JSON Web Tokens (JWT) 9.0.0+ & Bcrypt 5.1.0+
+* **Frontend:** Angular, Chart.js
+* **Backend:** Node.js , Express.js
+* **Database:** MongoDB Atlas
+* **Authentication:** JSON Web Tokens (JWT)& Bcrypt 
 
 ---
 
@@ -37,7 +37,7 @@ https://github.com/user-attachments/assets/f5d56cd1-3f57-4b46-af86-20ac723cb559
 ### Prerequisites
 * **Node.js**: v18.x or higher
 * **npm**: v9.x or higher
-* **Angular CLI**: v17.x or higher (`npm install -g @angular/cli`)
+* **Angular CLI**: v18.x (`npm install -g @angular/cli`)
 
 ### 1. Clone the Repository
 ```bash
