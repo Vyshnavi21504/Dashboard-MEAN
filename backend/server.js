@@ -7,14 +7,16 @@ const app = express();
 
 app.use(express.json());
  
-app.use(cors({
-  origin: [
-    'http://localhost:4200', 
-    'https://dashboard-mean-frontend.onrender.com' 
-  ],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
+// app.use(cors({
+//   origin: [
+//     'http://localhost:4200', 
+//     'https://dashboard-mean-frontend.onrender.com' 
+//   ],
+//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//   allowedHeaders: ['Content-Type', 'Authorization']
+// }));
+
+app.use(cors());
 
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected Successfully"))
