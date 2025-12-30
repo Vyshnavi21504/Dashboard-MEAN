@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 const AnalyticsSchema = new mongoose.Schema({
-  label: { type: String, required: true }, // e.g., "January" or "Product A"
-  value: { type: Number, required: true }, // e.g., 1250 (sales amount)
-  category: { type: String, required: true }, // e.g., "Revenue", "Signups"
+  label: { type: String, required: true },
+  value: { type: Number, required: true }, 
+  category: { type: String, required: true }, 
   date: { type: Date, default: Date.now }
 });
 
