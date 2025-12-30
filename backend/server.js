@@ -6,9 +6,12 @@ require('dotenv').config();
 const app = express();
 
 app.use(express.json());
-
+ 
 app.use(cors({
-  origin: 'http://localhost:4200', 
+  origin: [
+    'http://localhost:4200', 
+    'https://dashboard-mean-frontend.onrender.com' 
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
