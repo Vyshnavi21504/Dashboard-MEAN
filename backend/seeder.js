@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const Analytics = require('./models/Analytics'); // Path to your model
+const Analytics = require('./models/Analytics'); 
 
 dotenv.config();
 
-// Connect to DB
 mongoose.connect(process.env.MONGO_URI);
 
 const sampleData = [
@@ -20,16 +19,14 @@ const sampleData = [
 
 const importData = async () => {
   try {
-    // Clear existing data to avoid duplicates
     await Analytics.deleteMany();
     
-    // Insert new data
     await Analytics.insertMany(sampleData);
 
-    console.log('✅ Data Imported Successfully!');
+    console.log(' Data Imported Successfully!');
     process.exit();
   } catch (error) {
-    console.error('❌ Error with data import:', error);
+    console.error('Error with data import:', error);
     process.exit(1);
   }
 };
